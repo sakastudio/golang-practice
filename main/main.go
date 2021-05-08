@@ -3,8 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	message := "hello world"
-	const Hello string = "hello world"
-	fmt.Println(message)
-	fmt.Println(Hello)
+	a,b := 1000,100
+	if a>b{
+		fmt.Println("aのほうがデカい")
+	}else if a==b{
+		fmt.Println("aとb同じ")
+	}else {
+		fmt.Println("bのほうがデカい")
+	}
 }
