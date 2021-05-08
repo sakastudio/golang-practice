@@ -3,15 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	n := 2
-	switch n {
-	case 3:
-		n = n-1
-		fallthrough
-	case 2:
-		break
-	case 1:
-		n = 10
-	}
+	n := sum(10,5);
 	fmt.Println(n)
+}
+
+func sum(i, j int) int {
+	return i + j
 }
